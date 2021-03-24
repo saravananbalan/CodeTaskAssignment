@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.webpage{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction:column;
+}
+.webpage>.slidercomponent{
+  position: relative; 
+  width: 100%;
+    padding: 10px 50px 80px 80px;
+    display: flex;
+}
+
+.slider { -webkit-appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    background: #e5e9e9;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out
+   
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4c9be6;
+    cursor: pointer;
+    border-radius:50%;
+    animation: true;
+    color: #34e979;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #6ddee2;
+    cursor: pointer;
+    border-radius:50%
+  
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    padding:0px 0px 10px 0px;
+}
+  .description>.textcontent{
+    word-wrap: break-word;
+    height: 80px;
+    font-size: 28px;
+    text-align: center;
+    opacity: 1.0;
+    padding: 5px 120px;
+    color:#545858;
+    display:inline;
+
+  }
+  .description>.statictextcontent{
+    word-wrap: break-word;
+      font-size: 12px;
+      text-align: center;
+      font-weight: bold;
+      opacity: 0.5;
+      color:#8c9292;
+      display: inline;
+      padding: 5px 90px;  
+  }
+  .description>.textcontent>.valuecolor{
+      color: #4c9be6;
+      font-weight: 200;
+      text-decoration :underline;
+      padding: 1px;
+  }
+  .description>.textcontent>.calculatedvalue{
+      color: #34e979;
+      font-weight: 200;
+      text-decoration :underline;
+      padding: 1px;
+  }
+  .description>.textcontent>.resultvalue{
+    color: #1d1e1f;
+    font-weight: 200;
+    text-decoration :underline;
+    padding: 1px;
+}
+.slidercomponent>.rangestart{
+  position: absolute;
+  top: -10px;
+  left: 95px;
+  bottom: 10px;
+  font-size: 16px;
+      text-align: center;
+      font-weight: bold;
+      opacity: 0.5;
+      color:#8c9292;
+      display: inline;
+      
+}
+.slidercomponent>.rangeend{
+  position: absolute;
+  top: -10px;
+  right: 23px;
+  bottom: 10px;
+  font-size: 16px;
+      text-align: center;
+      font-weight: bold;
+      opacity: 0.5;
+      color:#8c9292;
+      display: inline;
+}
+.slidercomponent>.sliderallignment{
+
+  width: 100%;
+}
